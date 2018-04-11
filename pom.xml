@@ -55,6 +55,12 @@
      	 			<suiteXmlFiles>
       			 	 <suiteXmlFile>testng.xml</suiteXmlFile>
    				   </suiteXmlFiles>
+   				    <properties>
+                        <property>
+                            <name>reporter</name>
+                            <value>org.testng.reporters.XMLReporter:generateTestResultAttributes=true,generateGroupsAttribute=true</value>
+                        </property>
+                    </properties>
 		    </configuration>				
 		</plugin>
 			
