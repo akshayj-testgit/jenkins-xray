@@ -22,7 +22,7 @@ public class VerifyTest1 {
 		System.out.println("Sum of a and b is : "+ addition);
 		 ITestResult result = Reporter.getCurrentTestResult();    
 	        //result.setAttribute("requirement", "CALC-1234");
-	        result.setAttribute("test", "XRAYAJ-3");
+	        result.setAttribute("test", "XRAYAJ-10");
 	       // result.setAttribute("labels", "core addition");
 	}
 	
