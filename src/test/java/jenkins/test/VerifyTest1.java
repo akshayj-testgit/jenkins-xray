@@ -1,13 +1,10 @@
 package jenkins.test;
-import calculator.one.*;
-
-//import org.testng.Assert;
-import org.testng.annotations.Test;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+//import org.testng.Assert;
+import org.testng.annotations.Test;
 
-import com.xpandit.xray.*;
-import com.xpandit.xray.util.*;
+import calculator.one.SimpleCalc;
 
 
 public class VerifyTest1 {
@@ -22,7 +19,7 @@ public class VerifyTest1 {
 		System.out.println("Sum of a and b is : "+ addition);
 		 ITestResult result = Reporter.getCurrentTestResult();    
 	        //result.setAttribute("requirement", "CALC-1234");
-	        result.setAttribute("test", "XRAYAJ-10");
+	       // result.setAttribute("test", "XRAYAJ-1");
 	       // result.setAttribute("labels", "core addition");
 	}
 	
@@ -35,7 +32,7 @@ public class VerifyTest1 {
 		System.out.println("divide of a and b is : "+ divide);
 		 ITestResult result = Reporter.getCurrentTestResult();    
 	        //result.setAttribute("requirement", "CALC-1234");
-	        result.setAttribute("test", "XRAYAJ-2");
+	        //result.setAttribute("test", "XRAYAJ-2");
 	}
 	
 	@Test
@@ -48,7 +45,7 @@ public class VerifyTest1 {
 	System.out.println("multiply of a and b is : " +multiplication);
 	 ITestResult result = Reporter.getCurrentTestResult();    
      //result.setAttribute("requirement", "CALC-1234");
-     result.setAttribute("test", "XRAYAJ-1");
+    result.setAttribute("test", "XRAYAJ-3");
 	} 
 	
 }
