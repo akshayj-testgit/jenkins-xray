@@ -6,12 +6,13 @@
   <name>calculator</name>
   <description>calculator</description>
   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
 <dependencies>
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>6.10</version>
-    <!--<scope>test</scope>-->
+    <version>6.11</version>
+    <scope>test</scope>
 </dependency>
 
 	<dependency>
@@ -59,7 +60,7 @@
                         <property>
                             <name>reporter</name>
                             <value>org.testng.reporters.XMLReporter:generateTestResultAttributes=true,generateGroupsAttribute=true</value>
-                        </property>
+                                                      </property>
                     </properties>
 		    </configuration>				
 		</plugin>

@@ -19,7 +19,7 @@ public class VerifyTest1 {
 		//SimpleCalc sCalc = new SimpleCalc();
 		int addition= SimpleCalc.sum(10, 5);
 		System.out.println("Sum of a and b is : "+ addition);
-		 ITestResult result = Reporter.getCurrentTestResult();    
+		 //ITestResult result = Reporter.getCurrentTestResult();    
 	        //result.setAttribute("requirement", "CALC-1234");
 	       // result.setAttribute("test", "XRAYAJ-1");
 	       // result.setAttribute("labels", "core addition");
@@ -32,11 +32,13 @@ public class VerifyTest1 {
 		//SimpleCalc sCalcD = new SimpleCalc();
 		int divide= SimpleCalc.divide(10, 5);
 		System.out.println("divide of a and b is : "+ divide);
-		 ITestResult result = Reporter.getCurrentTestResult();    
+		// ITestResult result = Reporter.getCurrentTestResult();    
 		 //Assert.assertNotEquals(true, true);
 		 //Assert.assertEquals(divide, 2);
-		 Assert.assertEquals(divide, 2);
-		 //		result.setAttribute("requirement", "CALC-1234");
+		Assert.assertEquals(divide, 2); 
+		 ITestResult result = Reporter.getCurrentTestResult();
+		  result.setAttribute("labels", "core addition");
+		//result.setAttribute("requirement", "CALC-1234");
 	        //result.setAttribute("test", "XRAYAJ-2");
 	}
 	
@@ -47,8 +49,8 @@ public class VerifyTest1 {
 	
 		//SimpleCalc sCalcM = new SimpleCalc();
 		int multiplication= SimpleCalc.multiply(10, 5);
-	System.out.println("multiply of a and b is : " +multiplication);
-	 ITestResult result = Reporter.getCurrentTestResult();    
+		 ITestResult result = Reporter.getCurrentTestResult();
+		 System.out.println("multiply of a and b is : " +multiplication);
      //result.setAttribute("requirement", "CALC-1234");
     result.setAttribute("test", "XRAYAJ-3");
 	} 
