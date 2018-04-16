@@ -1,8 +1,10 @@
 package jenkins.test;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 //import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.reporters.XMLReporter;
 
 import calculator.one.SimpleCalc;
 
@@ -31,7 +33,10 @@ public class VerifyTest1 {
 		int divide= SimpleCalc.divide(10, 5);
 		System.out.println("divide of a and b is : "+ divide);
 		 ITestResult result = Reporter.getCurrentTestResult();    
-	        //result.setAttribute("requirement", "CALC-1234");
+		 //Assert.assertNotEquals(true, true);
+		 //Assert.assertEquals(divide, 2);
+		 Assert.assertEquals(divide, 2);
+		 //		result.setAttribute("requirement", "CALC-1234");
 	        //result.setAttribute("test", "XRAYAJ-2");
 	}
 	
