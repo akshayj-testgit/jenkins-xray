@@ -2,6 +2,8 @@ package jenkins.test;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 //import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.reporters.XMLReporter;
@@ -13,13 +15,22 @@ public class VerifyTest1 {
 
 	//SimpleCalc sCalc = new SimpleCalc();
 	//XRAYAJ
+	  @BeforeSuite
+	    public void setUp() throws Exception {
+	 
+	    }
+	 
+	    @AfterSuite
+	    public void tearDown() throws Exception {
+	    }
+	
 	@Test
 		public static void Addition()
 	{
 		//SimpleCalc sCalc = new SimpleCalc();
 		int addition= SimpleCalc.sum(10, 5);
 		System.out.println("Sum of a and b is : "+ addition);
-		 //ITestResult result = Reporter.getCurrentTestResult();    
+		ITestResult result = Reporter.getCurrentTestResult();    
 	        //result.setAttribute("requirement", "CALC-1234");
 	       // result.setAttribute("test", "XRAYAJ-1");
 	       // result.setAttribute("labels", "core addition");
@@ -39,7 +50,8 @@ public class VerifyTest1 {
 		 ITestResult result = Reporter.getCurrentTestResult();
 		  result.setAttribute("labels", "core addition");
 		//result.setAttribute("requirement", "CALC-1234");
-	        //result.setAttribute("test", "XRAYAJ-2");
+		  //result.setAttribute("test", "XRAYAJ-2");
+		  
 	}
 	
 	@Test
