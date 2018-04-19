@@ -1,15 +1,10 @@
 package com.xpand.annotations;
 
-import java.lang.reflect.Method;
- 
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
-import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
-import static java.lang.System.out;
-import static java.lang.System.err;
  
 /**
  * The listener interface for receiving Xray events.
