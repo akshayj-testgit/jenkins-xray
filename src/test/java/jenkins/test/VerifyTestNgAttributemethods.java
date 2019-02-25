@@ -34,7 +34,7 @@ public class VerifyTestNgAttributemethods {
 	
 	
 @Test
-@Xray(test = "@QAT-350", labels = "Existing XRay Test")
+@Xray(labels = "Existing XRay Test 3")
 	public static void DivisionOfTwoIntegers_XRay()
 	{
 	
