@@ -7,6 +7,29 @@
   <description>calculator</description>
   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 
+<properties>
+         
+        <!--XRay Properties -->
+  
+        <!--IN PROFILE ~.m2/settings.xml-->
+        <xray.jiraURL>https://mplatform.atlassian.net</xray.jiraURL>
+        <xray.resultsFormat>TestNG</xray.resultsFormat>
+        <xray.username>akshayj</xray.username>
+        <xray.password>Live@1234</xray.password>
+  
+        <xray.projectKey>QAT</xray.projectKey>
+        <!--
+        <xray.testExecKey></xray.testExecKey>
+        <xray.testPlanKey></xray.testPlanKey>
+        <xray.testEnvironments></xray.testEnvironments>
+        <xray.revision></xray.revision>
+        -->
+  
+        <!-- <xray.surefire.location>${basedir}/target/surefire-reports</xray.surefire.location> -->
+        <!--End Xray Properties -->
+  
+    </properties>
+
 <dependencies>
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
