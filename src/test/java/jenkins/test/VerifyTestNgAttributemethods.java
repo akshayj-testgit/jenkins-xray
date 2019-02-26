@@ -34,12 +34,12 @@ public class VerifyTestNgAttributemethods {
 	
 	
 @Test
-@Xray(labels = "Existing XRay Test 3")
+@Xray(test="QAT-1420", labels = "Existing XRay Test 3")
 	public static void DivisionOfTwoIntegers_XRay()
 	{
 	
 	int divide= SimpleCalc.divide(10, 5);
-	System.out.println("divide of a and b is : "+ divide);
+	System.out.println("divide of a and b is QAT-1420 : "+ divide);
 	
 	}
 	
